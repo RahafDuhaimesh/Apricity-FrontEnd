@@ -2,7 +2,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from html.vecurosoft.com/kundax/demo/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jul 2024 12:55:43 GMT -->
+<!-- Mirrored from html.vecurosoft.com/kundax/demo/event.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jul 2024 12:55:34 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -49,6 +49,51 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+ 
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--theme-color) !important
+}
+
+.profile-button {
+    background:var(--theme-color) !important;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: var(--theme-color) !important;
+}
+
+.profile-button:focus {
+    background: var(--theme-color) !important;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: var(--theme-color) !important;
+    box-shadow: none
+}
+
+.back:hover {
+    color: var(--theme-color) !important;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.add-experience:hover {
+    background:var(--theme-color) !important;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px var(--theme-color) !important;
+}
+    </style>
 
 </head>
 
@@ -61,7 +106,7 @@
 
     <!--************* Code Start From Here ************* -->
 
-
+   
     <!--========== Preloader =========-->
     <div class="preloader">
         <button class="vs-btn wave-btn preloaderCls">Cancel Preloader</button>
@@ -184,9 +229,6 @@
                       <li>
                         <a href="register.html">Register</a>
                       </li>
-                      <li>
-                        <a href="Profile.html">Profile</a>
-                      </li>
                     </ul>
                   </nav>
                   <button
@@ -253,6 +295,9 @@
                         <li>
                           <a href="register.html">Register</a>
                         </li>
+                        <li>
+                            <a href="Profile.html">Profile</a>
+                          </li>
                       </ul>
                     </nav>
                     <button
@@ -271,252 +316,30 @@
         <!--vs-main-menu-wrapper end-->
       </header>
       <!--======== / Header ========-->
-  
+      <center>
+        <div class="col-md-5 border-right" style="background-color: antiquewhite; border-radius: 20px;   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3"><center>
+                    <h4 class="text-center">Profile Settings</h4></center>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
+                    <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="surname"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" value=""></div><br>
+                    <div class="col-md-12"><label class="labels">City</label><input type="text" class="form-control" placeholder="your city" value=""></div><br>
+                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="enter email id" value=""></div><br>
+                    <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value=""></div><br>
+                </div>
 
-<!--======== About Section ========-->
-<div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcrumb-bg-1.jpg">
-    <div class="container">
-        <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Checkout</h1>
-            <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">Checkout</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!--======== / About Section ========-->
+                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
 
-<!--======== Checkout Section ========-->
-<div class="vs-checkout-wrapper space-page">
-    <div class="container">
-        <div class="woocommerce-form-login-toggle">
-            <div class="woocommerce-info">Returning customer? <a href="#" class="showlogin">Click here to login</a>
             </div>
-            <form action="#" class="woocommerce-form-login bg-smoke">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Username or email">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <div class="custom-checkbox">
-                                <input type="checkbox" id="remembermylogin">
-                                <label for="remembermylogin">Remember Me</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="vs-btn">Login</button>
-                            <p class="fs-xs mt-2 mb-0"><a class="text-reset" href="#">Lost your password?</a></p>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="woocommerce-form-coupon-toggle">
-            <div class="woocommerce-info">
-                Have a coupon? <a href="#" class="showcoupon">Click here to enter your code</a>
-            </div>
-        </div>
-        <form action="#" class="woocommerce-form-coupon bg-smoke">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Write your coupon code">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="vs-btn">Apply coupon</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-        <form action="#" class="woocommerce-checkout mt-40">
-            <div class="row ">
-                <div class="col-lg-6">
-                    <h2 class="h4">Billing Details</h2>
-                    <div class="row">
-                        <div class="col-12 form-group">
-                            <select class="form-select">
-                                <option>United Kingdom (UK)</option>
-                                <option>United State (US)</option>
-                                <option>Equatorial Guinea (GQ)</option>
-                                <option>Australia (AU)</option>
-                                <option>Germany (DE)</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Your Company Name">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Street Address">
-                            <input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Town / City">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="Country">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="Postcode / Zip">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="text" class="form-control" placeholder="Email Address">
-                            <input type="text" class="form-control" placeholder="Phone number">
-                        </div>
-                        <div class="col-12 form-group">
-                            <input type="checkbox" id="accountNewCreate">
-                            <label for="accountNewCreate">Create An Account?</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <p id="ship-to-different-address">
-                        <input id="ship-to-different-address-checkbox" type="checkbox" name="ship_to_different_address" value="1">
-                        <label for="ship-to-different-address-checkbox">
-                            Ship to a different address?
-                            <span class="checkmark"></span>
-                        </label>
-                    </p>
-                    <div class="shipping_address">
-                        <div class="row">
-                            <div class="col-12 form-group">
-                                <select class="form-select">
-                                    <option>United Kingdom (UK)</option>
-                                    <option>United State (US)</option>
-                                    <option>Equatorial Guinea (GQ)</option>
-                                    <option>Australia (AU)</option>
-                                    <option>Germany (DE)</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" placeholder="First Name">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" placeholder="Last Name">
-                            </div>
-                            <div class="col-12 form-group">
-                                <input type="text" class="form-control" placeholder="Your Company Name">
-                            </div>
-                            <div class="col-12 form-group">
-                                <input type="text" class="form-control" placeholder="Street Address">
-                                <input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
-                            </div>
-                            <div class="col-12 form-group">
-                                <input type="text" class="form-control" placeholder="Town / City">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" placeholder="Country">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" placeholder="Postcode / Zip">
-                            </div>
-                            <div class="col-12 form-group">
-                                <input type="text" class="form-control" placeholder="Email Address">
-                                <input type="text" class="form-control" placeholder="Phone number">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 form-group">
-                        <textarea cols="20" rows="5" class="form-control" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
-                    </div>
-                </div>
-            </div>
-        </form>
-        <h4 class="mt-4 pt-lg-2">Your Order</h4>
-        <form action="#" class="woocommerce-cart-form">
-            <table class="cart_table mb-20">
-                <thead>
-                    <tr>
-                        <th class="cart-col-image">Image</th>
-                        <th class="cart-col-productname">Product Name</th>
-                        <th class="cart-col-price">Price</th>
-                        <th class="cart-col-quantity">Quantity</th>
-                        <th class="cart-col-total">Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="cart_item">
-                        <td data-title="Product">
-                            <a class="cart-productimage" href="shop-details.html"><img width="91" height="91" src="assets/img/product/p-thumb-1.jpg" alt="Image"></a>
-                        </td>
-                        <td data-title="Name">
-                            <a class="cart-productname" href="shop-details.html">Wooden Bunny</a>
-                        </td>
-                        <td data-title="Price">
-                            <span class="amount"><bdi><span>$</span>18</bdi></span>
-                        </td>
-                        <td data-title="Quantity">
-                            <strong class="product-quantity">01</strong>
-                        </td>
-                        <td data-title="Total">
-                            <span class="amount"><bdi><span>$</span>18</bdi></span>
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot class="checkout-ordertable">
-                    <tr class="cart-subtotal">
-                        <th>Subtotal</th>
-                        <td data-title="Subtotal" colspan="4"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>120</bdi></span></td>
-                    </tr>
-                    <tr class="woocommerce-shipping-totals shipping">
-                        <th>Shipping</th>
-                        <td data-title="Shipping" colspan="4">
-                            Enter your address to view shipping options.
-                        </td>
-                    </tr>
-                    <tr class="order-total">
-                        <th>Total</th>
-                        <td data-title="Total" colspan="4"><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>120</bdi></span></strong>
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
-        </form>
-        <div class="mt-lg-3">
-            <div class="woocommerce-checkout-payment">
-                <ul class="wc_payment_methods payment_methods methods">
-                    <li class="wc_payment_method payment_method_bacs">
-                        <input id="payment_method_bacs" type="radio" class="input-radio" name="payment_method"
-                            value="bacs" checked="checked">
-                        <label for="payment_method_bacs">Direct bank transfer</label>
-                        <div class="payment_box payment_method_bacs">
-                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
-                        </div>
-                    </li>
-                    <li class="wc_payment_method payment_method_cheque">
-                        <input id="payment_method_cheque" type="radio" class="input-radio" name="payment_method"
-                            value="cheque">
-                        <label for="payment_method_cheque">Cheque Payment</label>
-                        <div class="payment_box payment_method_cheque">
-                            <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode. </p>
-                        </div>
-                    </li>
-                    <li class="wc_payment_method payment_method_cod">
-                        <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method">
-                        <label for="payment_method_cod">Cash On Delivery</label>
-                        <div class="payment_box payment_method_cod">
-                            <p>Pay with cash upon delivery.</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="form-row place-order">
-                    <button type="submit" class="vs-btn">Place order</button>
-                </div>
-            </div>
-        </div>
+        </div></center>
     </div>
-</div>
-<!--======== / Checkout Section ========-->
+    </div>
 
     <!--==============================
 	Footer Area
@@ -721,5 +544,5 @@
 </body>
 
 
-<!-- Mirrored from html.vecurosoft.com/kundax/demo/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jul 2024 12:55:43 GMT -->
+<!-- Mirrored from html.vecurosoft.com/kundax/demo/event.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jul 2024 12:55:36 GMT -->
 </html>
